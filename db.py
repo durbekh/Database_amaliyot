@@ -9,4 +9,17 @@ cur.execute("""CREATE TABLE IF NOT EXISTS users(
     score INTEGER
 )""")
 
+cur.execute("""CREATE TABLE IF NOT EXISTS games(
+    id INTEGER,
+    user_id INTEGER,
+    score INTEGER,
+    time INTEGER
+    
+    
+)""")
 con.close()
+
+
+
+
+
