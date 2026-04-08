@@ -8,6 +8,10 @@ cur.execute("""CREATE TABLE IF NOT EXISTS users(
     fam TEXT,
     yosh INTEGER
 )""")
+cur.execute("""CREATE TABLE IF NOT EXISTS xaridlar(
+    nomi TEXT,
+    narxi INTEGER
+)""")
 
 cur.execute("""INSERT INTO users(id , ism , fam , yosh) VALUES (1, 'Durbek' , 'Hayotbekov', 18)""")
 cur.execute("""INSERT INTO users(id , ism , fam , yosh) VALUES (2, 'Farhotjon' , 'Abdullayev', 25)""")
@@ -15,3 +19,5 @@ cur.execute("""INSERT INTO users(id , ism , fam , yosh) VALUES (3, 'Anvar' , 'Jo
 
 con.commit()
 con.close()
+
+
