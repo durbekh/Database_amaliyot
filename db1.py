@@ -33,7 +33,7 @@ cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (4, 4 ,'N
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (5, 5 ,'Orik', 29_000)""")
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (6, 6 ,'Shaftoli', 38_000)""")
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (7, 7 ,'Olhori', 23_000)""")
-cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (8, 8 ,'Chiya', 33_000)""")
+cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (8, 8 ,'Olcha', 33_000)""")
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (9, 9 ,'Gilos', 29_000)""")
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (10, 10 ,'Mango', 50_000)""")
 cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (11, 1 ,'Batareya', 5_000)""")
