@@ -51,4 +51,3 @@ cur.execute("""INSERT INTO xaridlar(id , user_id, nomi , narxi) VALUES (20, 10 ,
 con.commit()
 con.close()
 
-
