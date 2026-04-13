@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-with sql.connect("baza.db") as con:
+with sql.connect("baza1.db") as con:
     cur = con.cursor()
     
     cur.execute("""CREATE TABLE IF NOT EXISTS students(
@@ -17,23 +17,21 @@ with sql.connect("baza.db") as con:
         price INTEGER
         )""") 
     
-    cur.execute("""INSERT OR IGNORE INTO users(id , first_name , last_name , age) 
+    cur.execute("""INSERT OR IGNORE INTO students(id , first_name , last_name , age) 
                 VALUES (1, 'Abdulaziz','Palvonboyev', 15)""")
+    cur.execute("""INSERT OR IGNORE INTO students(id , first_name , last_name , age) 
+                VALUES (2, 'Shokirjon','Salayev', 17)""")
     
     
-    cur.execute("""INSERT OR IGNORE INTO xaridlar(id , user_id , product_name , price)
+    cur.execute("""INSERT OR IGNORE INTO xaridlar(id , student_id , product_name , price)
                 VALUES (1 ,1 ,'Uzum' , 10000)""")
+    cur.execute("""INSERT OR IGNORE INTO xaridlar(id , student_id , product_name , price)
+                VALUES (2 ,1 ,'Anor' , 40000)""")
+    cur.execute("""INSERT OR IGNORE INTO xaridlar(id , student_id , product_name , price)
+                VALUES (3 ,1 ,'Qazi', 150000)""")
+    cur.execute("""INSERT OR IGNORE INTO xaridlar(id , student_id , product_name , price)
+                VALUES (4 ,2 ,'Noutbuk' , 6500000)""")
     
 con.commit()
 
 
-
-
-
-
-
-
-
-
-
-    
